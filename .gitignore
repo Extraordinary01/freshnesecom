@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+keys.js
+venv
+secret_key.txt
+stripe_secret_key.txt
+email_password.txt
+Stock images
+__pycache__

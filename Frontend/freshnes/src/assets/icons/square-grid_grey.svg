@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg9004"
+   sodipodi:docname="square-grid_grey.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9008" />
+  <sodipodi:namedview
+     id="namedview9006"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="35"
+     inkscape:cx="8.7"
+     inkscape:cy="8.3"
+     inkscape:window-width="1360"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9004" />
+  <path
+     d="M13.334 1.33331H2.66732C1.93094 1.33331 1.33398 1.93027 1.33398 2.66665V13.3333C1.33398 14.0697 1.93094 14.6666 2.66732 14.6666H13.334C14.0704 14.6666 14.6673 14.0697 14.6673 13.3333V2.66665C14.6673 1.93027 14.0704 1.33331 13.334 1.33331Z"
+     stroke="#6A983C"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path8998"
+     style="stroke:#a9a9a9;stroke-opacity:1" />
+  <path
+     d="M1.33398 8H14.6673"
+     stroke="#6A983C"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path9000"
+     style="stroke:#a9a9a9;stroke-opacity:1" />
+  <path
+     d="M8 1.33331V14.6666"
+     stroke="#6A983C"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path9002"
+     style="stroke:#a9a9a9;stroke-opacity:1" />
+</svg>
