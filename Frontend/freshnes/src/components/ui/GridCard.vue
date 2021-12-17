@@ -82,10 +82,11 @@
 		padding: 16px;
 		border: 1px solid #d1d1d1;
 		border-radius: 12px;
-		position: relative;
+
 		&__img {
 			margin: 0;
 			width: 100%;
+			position: relative;
 			img {
 				border-radius: 12px;
 				max-width: 280px;
@@ -117,6 +118,9 @@
 			position: absolute;
 			top: 12px;
 			left: 12px;
+			background: #f4f8ec;
+			padding: 0 8px;
+			border-radius: 12px;
 		}
 	}
 </style>

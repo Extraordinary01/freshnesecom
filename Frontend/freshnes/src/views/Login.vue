@@ -128,6 +128,7 @@
 			background: #d9d9d9;
 			border: 2px solid #a9a9a9;
 			text-align: center;
+			color: #151515;
 		}
 		&__main {
 			width: 100%;

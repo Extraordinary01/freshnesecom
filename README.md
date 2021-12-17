@@ -9,7 +9,7 @@ Backend was developed using Django and DRF. It includes simple authentication/au
 
 #### Frontend
 
-In frontend I used Vue 3 with Composition API. Original design doesn't include signup, login, user profile pages, so I made it by myself. Don't judge strong please I'm not a designer and I prefer backend development. Almost all elements of frontend are active and you can test it freely.
+In frontend I used Vue 3 with Composition API. Original design doesn't include signup, login, user profile pages, so I made it by myself. Maybe it looks not really good but, I'm not a designer and I prefer backend development. Almost all elements of frontend are active and you can test it freely.
 Example:
 
 - Products by tag, category
