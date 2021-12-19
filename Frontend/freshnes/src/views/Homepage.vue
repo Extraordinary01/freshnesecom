@@ -6,10 +6,10 @@
 </template>
 
 <script>
-	import MainFlex from "../components/main/MainFlex.vue";
-	import Quotes from "../components/main/Quotes.vue";
-	import Headline from "../components/ui/Headline.vue";
-	import HomeBlog from "../components/main/HomeBlog.vue";
+	import MainFlex from "@/components/main/MainFlex.vue";
+	import Quotes from "@/components/main/Quotes.vue";
+	import Headline from "@/components/ui/Headline.vue";
+	import HomeBlog from "@/components/main/HomeBlog.vue";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 
@@ -92,5 +92,5 @@
 </script>
 
 <style lang="scss">
-	@import "../assets/scss/style.scss";
+	@import "@/assets/scss/style.scss";
 </style>

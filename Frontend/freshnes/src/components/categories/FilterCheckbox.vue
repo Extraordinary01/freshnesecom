@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	import Checkbox from "../ui/Checkbox.vue";
+	import Checkbox from "@/components/ui/Checkbox.vue";
 	import { ref, watch } from "vue";
 	export default {
 		components: {

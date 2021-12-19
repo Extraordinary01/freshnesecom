@@ -1,4 +1,4 @@
-import api from "../api/api";
+import api from "@/api/api";
 import axios from "axios";
 
 export const estore = {
@@ -32,16 +32,12 @@ export const estore = {
 		},
 		brands: (state) => (payload) => {
 			const result = new Set();
-			if (payload == "best-selling") {
-				state.bestSellingProducts.forEach((el) => {
-					result.add(el.brand);
-				});
-			} else if (payload == "farmers") {
-				state.bestFromFarmers.forEach((el) => {
+			if (payload === "category" || payload === "tag") {
+				state.productsBy.forEach((el) => {
 					result.add(el.brand);
 				});
 			} else {
-				state.productsBy.forEach((el) => {
+				state[payload].forEach((el) => {
 					result.add(el.brand);
 				});
 			}

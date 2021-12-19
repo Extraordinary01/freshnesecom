@@ -4,7 +4,13 @@
 			<img :src="product.img" alt="product image" />
 		</div>
 		<div class="list-card__item list-card__info">
-			<h5 class="list-card__title title">{{ product.name }}</h5>
+			<router-link
+				:to="{
+					name: 'product-detail',
+					params: { category_url: product.category_url, url: product.url },
+				}"
+				><h5 class="list-card__title title">{{ product.name }}</h5></router-link
+			>
 			<p class="list-card__description">{{ product.desc }}</p>
 			<star-rating
 				:star="
@@ -71,8 +77,7 @@
 							props: { product: product },
 						}"
 						>Product Detail
-						<span
-							><img src="../../assets/icons/right_arrow_wh.svg" alt="" /></span
+						<span><img src="@/assets/icons/right_arrow_wh.svg" alt="" /></span
 					></router-link>
 				</div>
 				<div class="list-card__wish">
@@ -80,12 +85,12 @@
 						v-if="!user.wishlist.filter((el) => el.id === product.id).length"
 						@click="addToWishlist()"
 					>
-						<span><img src="../../assets/icons/heart.svg" alt="add" /></span>
+						<span><img src="@/assets/icons/heart.svg" alt="add" /></span>
 						Add to wish list
 					</button>
 					<button v-else @click="removeFromWishlist()">
 						<span
-							><img src="../../assets/icons/heart_filled.svg" alt="remove"
+							><img src="@/assets/icons/heart_filled.svg" alt="remove"
 						/></span>
 						Remove wish
 					</button>
@@ -96,8 +101,8 @@
 </template>
 
 <script>
-	import StarRating from "../ui/StarRating.vue";
-	import useWishList from "../../composables/useWishList";
+	import StarRating from "@/components/ui/StarRating.vue";
+	import useWishList from "@/composables/useWishList";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 	export default {

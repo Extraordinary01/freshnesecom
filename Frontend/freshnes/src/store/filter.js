@@ -12,11 +12,9 @@ export const filter = {
 		},
 		setRate(state, payload) {
 			state.rate = payload;
-			state.appliedFilters.push("Rating");
 		},
 		setBrand(state, payload) {
 			state.brand = payload;
-			state.appliedFilters.push("Brand");
 		},
 		setPrice(state, payload) {
 			state.price = payload;
@@ -34,6 +32,11 @@ export const filter = {
 		},
 		clearAppliedFilters(state) {
 			state.appliedFilters = [];
+		},
+		addAppliedFilters(state, payload) {
+			if (!state.appliedFilters.includes(payload)) {
+				state.appliedFilters.push(payload);
+			}
 		},
 	},
 	actions: {

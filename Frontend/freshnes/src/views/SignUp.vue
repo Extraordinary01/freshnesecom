@@ -172,11 +172,11 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import InputFile from "../components/ui/InputFile.vue";
-	import TogglePassword from "../components/ui/TogglePassword.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import InputFile from "@/components/ui/InputFile.vue";
+	import TogglePassword from "@/components/ui/TogglePassword.vue";
 	import { ref } from "vue";
-	import useUserValidation from "../composables/useUserValidation";
+	import useUserValidation from "@/composables/useUserValidation";
 	import { useStore } from "vuex";
 	export default {
 		components: {

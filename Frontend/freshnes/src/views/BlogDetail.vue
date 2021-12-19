@@ -63,7 +63,7 @@
 							@click="$router.push({ name: 'blog' })"
 							class="btn blog-body__btn"
 						>
-							<span><img src="../assets/icons/back.svg" alt="" /></span> Back to
+							<span><img src="@/assets/icons/back.svg" alt="" /></span> Back to
 							Blog
 						</button>
 					</div>
@@ -78,7 +78,7 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
 	import { computed } from "vue";
 	import { useStore } from "vuex";
 	import { useRoute } from "vue-router";

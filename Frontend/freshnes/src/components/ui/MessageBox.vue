@@ -47,11 +47,12 @@
 		border-radius: 12px;
 		&__text {
 			margin: auto 0;
+			width: 94%;
 			color: var(--text-color);
 		}
 		&__icon {
 			display: inline-block;
-			background-image: url("../../assets/icons/close.svg");
+			background-image: url("@/assets/icons/close.svg");
 			width: 20px;
 			height: 20px;
 			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg)

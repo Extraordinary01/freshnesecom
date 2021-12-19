@@ -42,9 +42,9 @@
 </template>
 
 <script>
-	import StarRating from "./StarRating.vue";
+	import StarRating from "@/components/ui/StarRating.vue";
 	import { toRefs, ref } from "vue";
-	import useAddCart from "../../composables/useAddCart";
+	import useAddCart from "@/composables/useAddCart";
 	export default {
 		props: {
 			grid: {

@@ -11,13 +11,13 @@
 			@updateCheckbox="updateRate"
 		>
 			<img
-				src="../../assets/icons/action-star.svg"
+				src="@/assets/icons/action-star.svg"
 				alt="active star rating"
 				v-for="j in 5 - i + 1"
 				:key="j"
 			/>
 			<img
-				src="../../assets/icons/inactive-star.svg"
+				src="@/assets/icons/inactive-star.svg"
 				alt="inactive star rating"
 				v-for="j in i - 1"
 				:key="j"
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-	import CheckboxRadio from "../ui/CheckboxRadio.vue";
+	import CheckboxRadio from "@/components/ui/CheckboxRadio.vue";
 	export default {
 		components: {
 			CheckboxRadio,
@@ -44,5 +44,3 @@
 		},
 	};
 </script>
-
-<style lang="scss"></style>

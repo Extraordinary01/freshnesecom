@@ -30,7 +30,7 @@
 					<button class="green-btn" @click="apply()">Apply</button>
 				</div>
 				<div class="card__btn price-filter__btn price-filter__btn_r">
-					<button class="btn" @click="reset()">Reset</button>
+					<button class="green-btn btn" @click="reset()">Reset</button>
 				</div>
 			</div>
 		</div>
@@ -50,16 +50,16 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
-	import CategoryTitle from "../components/ui/CategoryTitle.vue";
-	import SelectedFiltres from "../components/categories/SelectedFiltres.vue";
-	import CategorySums from "../components/categories/CategorySums.vue";
-	import BrandsFilter from "../components/categories/BrandsFilter.vue";
-	import RatingFilter from "../components/categories/RatingFilter.vue";
-	import PriceFilter from "../components/categories/PriceFilter.vue";
-	import ListView from "../components/categories/ListView.vue";
-	import LoadOther from "../components/LoadOther.vue";
-	import ProductsGrid from "../components/ui/ProductsGrid.vue";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
+	import CategoryTitle from "@/components/ui/CategoryTitle.vue";
+	import SelectedFiltres from "@/components/categories/SelectedFiltres.vue";
+	import CategorySums from "@/components/categories/CategorySums.vue";
+	import BrandsFilter from "@/components/categories/BrandsFilter.vue";
+	import RatingFilter from "@/components/categories/RatingFilter.vue";
+	import PriceFilter from "@/components/categories/PriceFilter.vue";
+	import ListView from "@/components/categories/ListView.vue";
+	import LoadOther from "@/components/LoadOther.vue";
+	import ProductsGrid from "@/components/ui/ProductsGrid.vue";
 	import { useStore } from "vuex";
 	import { computed, ref, watch } from "vue";
 	import { useRoute } from "vue-router";
@@ -168,11 +168,13 @@
 				const brand = computed(() => store.state.filter.brand);
 				const price = computed(() => store.state.filter.price);
 				if (rate.value != 0) {
+					store.commit("filter/addAppliedFilters", "Rating");
 					products.value = products.value.filter((el) => {
 						return el.rating_avg >= parseFloat(rate.value);
 					});
 				}
 				if (brand.value !== "") {
+					store.commit("filter/addAppliedFilters", "Brand");
 					products.value = products.value.filter((el) => {
 						return el.brand === brand.value;
 					});
@@ -271,7 +273,7 @@
 			&__item {
 				width: 80%;
 				margin: 20px auto;
-				&:first-child {
+				&:last-child {
 					width: 100%;
 				}
 			}

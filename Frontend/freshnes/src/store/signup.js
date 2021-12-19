@@ -1,5 +1,5 @@
-import auth from "../api/auth";
-import router from "../router";
+import auth from "@/api/auth";
+import router from "@/router";
 
 import {
 	ACTIVATION_BEGIN,
@@ -11,7 +11,7 @@ import {
 	REGISTRATION_FAILURE,
 	REGISTRATION_SUCCESS,
 	SET_TOKEN,
-} from "./types";
+} from "@/store/types";
 
 export default {
 	namespaced: true,

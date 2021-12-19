@@ -3,8 +3,8 @@
 $fontfamily: "Open Sans";
 $minwidth: 320px;
 
-@import "mixins.scss";
-@import "null.scss";
+@import "@/assets/scss/mixins.scss";
+@import "@/assets/scss/null.scss";
 
 .container {
 	width: 100%;
@@ -449,7 +449,6 @@ $minwidth: 320px;
 		font-size: 14px;
 	}
 	.btn {
-		font-size: 12px;
 		padding: 3px 8px;
 		span {
 			margin-left: 5px;

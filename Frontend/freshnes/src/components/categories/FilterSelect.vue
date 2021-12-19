@@ -6,16 +6,14 @@
 			<a href="#" class="filter-blocks__link dropdown__link"
 				>Select
 				<span
-					><img
-						src="../../assets/icons/dropdown__icon.svg"
-						alt="dropdown" /></span
+					><img src="@/assets/icons/dropdown__icon.svg" alt="dropdown" /></span
 			></a>
 		</div>
 	</div>
 </template>
 
 <script>
-	import Checkbox from "../ui/Checkbox.vue";
+	import Checkbox from "@/components/ui/Checkbox.vue";
 	export default {
 		components: {
 			Checkbox,

@@ -1,7 +1,7 @@
 <template>
 	<span class="applied-filters__item tag"
 		>{{ filter }} Filter<span @click="$emit('removeFilter', filter)"
-			><img src="../../assets/icons/close_filter.svg" alt="" /></span
+			><img src="@/assets/icons/close_filter.svg" alt="" /></span
 	></span>
 </template>
 

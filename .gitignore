@@ -10,3 +10,5 @@ stripe_secret_key.txt
 email_password.txt
 Stock images
 __pycache__
+.git
+.gitignore

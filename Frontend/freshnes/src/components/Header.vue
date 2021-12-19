@@ -23,7 +23,7 @@
 				<div class="header__column">
 					<div class="menu__icon">
 						<router-link :to="{ name: 'home' }"
-							><img src="../assets/logo.png" alt="logo"
+							><img src="@/assets/logo.png" alt="logo"
 						/></router-link>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 								v-model="searchQuery"
 							/>
 							<button @click="search()">
-								<img src="../assets/icons/search.svg" alt="search" />
+								<img src="@/assets/icons/search.svg" alt="search" />
 							</button>
 						</div>
 					</div>
@@ -79,7 +79,7 @@
 				<div class="header__column">
 					<div class="header-customer">
 						<div class="header-customer__link tooltip">
-							<img src="../assets/icons/customer.svg" alt="customer" />
+							<img src="@/assets/icons/customer.svg" alt="customer" />
 							<div class="tooltip__item">
 								<div class="tooltip__info" v-if="!isAuthenticated">
 									<p>You're not logged in!</p>
@@ -111,7 +111,7 @@
 							title="Cart"
 							class="header-customer__link"
 						>
-							<img src="../assets/icons/cart.svg" alt="cart" /><span
+							<img src="@/assets/icons/cart.svg" alt="cart" /><span
 								v-if="cartTotalLength > 0"
 								>{{ cartTotalLength }}</span
 							>
@@ -124,7 +124,7 @@
 									<h3 class="title">Shopping Cart</h3>
 									<div @click="toggleCart()" class="shopping-cart__close">
 										<span>Close</span>
-										<img src="../assets/icons/close.svg" alt="close cart" />
+										<img src="@/assets/icons/close.svg" alt="close cart" />
 									</div>
 								</div>
 								<transition name="fade">
@@ -174,9 +174,9 @@
 </template>
 
 <script>
-	import useCart from "../composables/useCart";
-	import useSearchFilter from "../composables/useSearchFilter";
-	import CartCard from "./ui/CartCard.vue";
+	import useCart from "@/composables/useCart";
+	import useSearchFilter from "@/composables/useSearchFilter";
+	import CartCard from "@/components/ui/CartCard.vue";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 	export default {
@@ -308,7 +308,7 @@
 		}
 		&__dropdown {
 			select {
-				background: url("/src/assets/icons/dropdown__icon.svg") no-repeat right
+				background: url("@/assets/icons/dropdown__icon.svg") no-repeat right
 					transparent;
 				-webkit-appearance: none;
 				font-family: "Poppins";

@@ -16,7 +16,7 @@
 				<div class="payment__main">
 					<span>Credit card</span>
 					<span class="checkout-radio__icon"
-						><img src="../../assets/icons/mastercard.png" alt="mastercard"
+						><img src="@/assets/icons/mastercard.png" alt="mastercard"
 					/></span>
 				</div>
 
@@ -58,7 +58,7 @@
 			<template v-slot:top>
 				<span>PayPal</span>
 				<span class="checkout-radio__icon"
-					><img src="../../assets/icons/paypal.png" alt="bitcoin"
+					><img src="@/assets/icons/paypal.png" alt="bitcoin"
 				/></span>
 			</template>
 		</radio>
@@ -73,7 +73,7 @@
 			<template v-slot:top>
 				<span>Bitcoin</span>
 				<span class="checkout-radio__icon"
-					><img src="../../assets/icons/bitcoin.png" alt="bitcoin"
+					><img src="@/assets/icons/bitcoin.png" alt="bitcoin"
 				/></span>
 			</template>
 		</radio>
@@ -81,8 +81,8 @@
 </template>
 
 <script>
-	import BillingInput from "../ui/BillingInput.vue";
-	import Radio from "../ui/Radio.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import Radio from "@/components/ui/Radio.vue";
 	export default {
 		components: {
 			BillingInput,

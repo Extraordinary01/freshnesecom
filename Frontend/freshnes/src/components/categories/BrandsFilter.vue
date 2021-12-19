@@ -15,7 +15,7 @@
 </template>
 
 <script>
-	import CheckboxRadio from "../ui/CheckboxRadio.vue";
+	import CheckboxRadio from "@/components/ui/CheckboxRadio.vue";
 	import { mapGetters } from "vuex";
 	export default {
 		components: {

@@ -67,10 +67,10 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
-	import BlogBigCard from "../components/ui/BlogBigCard.vue";
-	import BlogCard from "../components/ui/BlogCard.vue";
-	import LoadOther from "../components/LoadOther.vue";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
+	import BlogBigCard from "@/components/ui/BlogBigCard.vue";
+	import BlogCard from "@/components/ui/BlogCard.vue";
+	import LoadOther from "@/components/LoadOther.vue";
 	import { useStore } from "vuex";
 	import { computed, ref, watch } from "vue";
 	import { useRoute } from "vue-router";

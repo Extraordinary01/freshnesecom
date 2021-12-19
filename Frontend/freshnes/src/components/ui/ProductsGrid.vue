@@ -7,7 +7,7 @@
 </template>
 
 <script>
-	import GridCard from "./GridCard.vue";
+	import GridCard from "@/components/ui/GridCard.vue";
 	export default {
 		components: {
 			GridCard,

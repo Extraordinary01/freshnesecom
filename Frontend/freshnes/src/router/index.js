@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Homepage from "../views/Homepage.vue";
-import store from "../store";
+import Homepage from "@/views/Homepage.vue";
+import store from "@/store";
 
 const requireUnauthenticated = (to, from, next) => {
 	store.dispatch("auth/initialize").then(() => {
 		if (store.getters["auth/isAuthenticated"]) {
-			next("/");
+			next({ name: "home" });
 		} else {
 			next();
 		}
@@ -30,7 +30,7 @@ const activateUser = async (to, from, next) => {
 		token: to.params.token,
 	});
 	if (!store.state.signup.activationError) {
-		next("/");
+		next({ name: "home" });
 	} else {
 		next({ name: "signup" });
 	}
@@ -54,151 +54,153 @@ const getPosts = async (to, from, next) => {
 	next();
 };
 
+const path = process.env.NODE_ENV === "production" ? "/freshnese-vue/" : "/";
+
 const router = createRouter({
 	history: createWebHistory(),
 	routes: [
 		{
-			path: "/",
+			path: path,
 			name: "home",
 			component: Homepage,
 			meta: { title: "Freshnese.com" },
 		},
 		{
-			path: "/best-selling-products",
+			path: path + "best-selling-products",
 			name: "bestSellingProducts",
 			component: () => import("../views/Category.vue"),
 			meta: { title: "Best Selling Products" },
 		},
 		{
-			path: "/best-from-farmers",
+			path: path + "best-from-farmers",
 			name: "bestFromFarmers",
 			component: () => import("../views/Category.vue"),
 			meta: { title: "Best From Farmers" },
 		},
 		{
-			path: "/produts/search/:query",
+			path: path + "produts/search/:query",
 			name: "searchProducts",
 			component: () => import("../views/Category.vue"),
 			meta: { title: "Search Products" },
 		},
 		{
-			path: "/store/category/:category_url",
+			path: path + "store/category/:category_url",
 			name: "category",
 			component: () => import("../views/Category.vue"),
 		},
 		{
-			path: "/store/product/:category_url/:url",
+			path: path + "store/product/:category_url/:url",
 			name: "product-detail",
 			component: () => import("../views/ProductDetail.vue"),
 			beforeEnter: getProductInfo,
 		},
 		{
-			path: "/store/product/related",
+			path: path + "store/product/related",
 			name: "relatedProducts",
 			component: () => import("../views/Category.vue"),
 			meta: { title: "Related Products" },
 		},
 		{
-			path: "/store/tag/:category_url",
+			path: path + "store/tag/:category_url",
 			name: "tag",
 			component: () => import("../views/Category.vue"),
 		},
 		{
-			path: "/blog",
+			path: path + "blog",
 			name: "blog",
 			component: () => import("../views/Blog.vue"),
 			beforeEnter: getPosts,
 			meta: { title: "Blog" },
 		},
 		{
-			path: "/blog/category/:category_url",
+			path: path + "blog/category/:category_url",
 			name: "blog-category",
 			component: () => import("../views/Blog.vue"),
 		},
 		{
-			path: "/blog/:year/:month",
+			path: path + "blog/:year/:month",
 			name: "blog-date",
 			component: () => import("../views/Blog.vue"),
 			beforeEnter: getPosts,
 		},
 		{
-			path: "/blog/tag/:category_url",
+			path: path + "blog/tag/:category_url",
 			name: "blog-tag",
 			component: () => import("../views/Blog.vue"),
 		},
 		{
-			path: "/blog/post/:category_url/:url",
+			path: path + "blog/post/:category_url/:url",
 			name: "blog-detail",
 			component: () => import("../views/BlogDetail.vue"),
 		},
 		{
-			path: "/store/checkout",
+			path: path + "store/checkout",
 			name: "checkout",
 			meta: { title: "Checkout page" },
 			component: () => import("../views/Checkout.vue"),
 		},
 		{
-			path: "/store/wishlist",
+			path: path + "store/wishlist",
 			name: "wishlist",
 			component: () => import("../views/Category.vue"),
 			beforeEnter: requireAuthenticated,
 			meta: { title: "Wishlist" },
 		},
 		{
-			path: "/login",
+			path: path + "login",
 			name: "login",
 			component: () => import("../views/Login.vue"),
 			beforeEnter: requireUnauthenticated,
 			meta: { title: "Login" },
 		},
 		{
-			path: "/logout",
+			path: path + "logout",
 			name: "logout",
 			beforeEnter: redirectLogout,
 			meta: { title: "Logout" },
 		},
 		{
-			path: "/user/profile",
+			path: path + "user/profile",
 			name: "profile",
 			component: () => import("../views/Profile.vue"),
 			beforeEnter: requireAuthenticated,
 			meta: { title: "User profile" },
 		},
 		{
-			path: "/user/profile/change",
+			path: path + "user/profile/change",
 			name: "profile-change",
 			component: () => import("../views/ProfileChange.vue"),
 			beforeEnter: requireAuthenticated,
 			meta: { title: "Profile settings" },
 		},
 		{
-			path: "/signup",
+			path: path + "signup",
 			name: "signup",
 			component: () => import("../views/SignUp.vue"),
 			beforeEnter: requireUnauthenticated,
 			meta: { title: "Signup" },
 		},
 		{
-			path: "/user/verify-email/:uid/:token",
+			path: path + "user/verify-email/:uid/:token",
 			name: "verify-email",
 			beforeEnter: activateUser,
 			meta: { title: "Verify email" },
 		},
 		{
-			path: "/user/change-password",
+			path: path + "user/change-password",
 			name: "change-password",
 			component: () => import("../views/ChangePassword.vue"),
 			beforeEnter: requireAuthenticated,
 			meta: { title: "Change password" },
 		},
 		{
-			path: "/user/password-reset",
+			path: path + "user/password-reset",
 			name: "password-reset",
 			component: () => import("../views/PasswordReset.vue"),
 			meta: { title: "Password reset" },
 		},
 		{
-			path: "/user/password-reset/:uid/:token",
+			path: path + "user/password-reset/:uid/:token",
 			name: "password-reset-confirm",
 			component: () => import("../views/PasswordResetConfirm.vue"),
 			meta: { title: "Confirm password" },

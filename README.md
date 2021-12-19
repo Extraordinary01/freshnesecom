@@ -20,3 +20,7 @@ Example:
 - Checkout (p.s. couldn't test checkout, because stripe gives me network error, I need VPN for testing it)
 - Blog
 - Posts by tag, category and date and many other features.
+
+#### Site deployment
+
+Backend locates at [Pythonanywhere](https://pythonanywhere.com) and frontend locates at [Github](https://extraordinary01.github.io/freshnese-vue/). For deploying frontend, I created second [repo](https://github.com/Extraordinary01/freshnese-vue)

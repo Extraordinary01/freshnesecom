@@ -10,7 +10,7 @@
 </template>
 
 <script>
-	import Async from "./views/Async.vue";
+	import Async from "@/views/Async.vue";
 	export default {
 		components: { Async },
 		mounted() {
@@ -35,7 +35,7 @@
 </script>
 
 <style lang="scss">
-	@import "./assets/scss/style.scss";
+	@import "@/assets/scss/style.scss";
 	@import "../node_modules/spinthatshit/src/loaders.scss";
 	main {
 		height: fit-content;

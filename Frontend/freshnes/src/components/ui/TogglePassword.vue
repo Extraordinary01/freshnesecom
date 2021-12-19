@@ -1,9 +1,9 @@
 <template>
 	<span v-if="modelValue" @click="toggleShow()"
-		><img src="../../assets/icons/open_pass.svg" alt=""
+		><img src="@/assets/icons/open_pass.svg" alt=""
 	/></span>
 	<span v-else @click="toggleShow()"
-		><img src="../../assets/icons/closed_pass.svg" alt=""
+		><img src="@/assets/icons/closed_pass.svg" alt=""
 	/></span>
 </template>
 

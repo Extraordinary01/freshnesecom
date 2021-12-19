@@ -14,7 +14,7 @@
 			<div class="user-one-column__main login__main">
 				<div class="user-one-column__input login__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/customer.svg" alt="" />
+						<img src="@/assets/icons/customer.svg" alt="" />
 						<billing-input
 							title="Login"
 							placeholder="Username"
@@ -25,7 +25,7 @@
 				</div>
 				<div class="user-one-column__input login__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="Password"
 							name="password"
@@ -70,8 +70,8 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import TogglePassword from "../components/ui/TogglePassword.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import TogglePassword from "@/components/ui/TogglePassword.vue";
 	import { useStore } from "vuex";
 	import { ref, computed, watch } from "vue";
 	import { onBeforeRouteLeave } from "vue-router";

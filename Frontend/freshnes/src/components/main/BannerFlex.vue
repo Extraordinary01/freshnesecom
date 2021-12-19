@@ -8,7 +8,7 @@
 </template>
 
 <script>
-	import Banner from "../ui/Banner.vue";
+	import Banner from "@/components/ui/Banner.vue";
 	export default {
 		components: {
 			Banner,
@@ -40,7 +40,7 @@
 			height: auto;
 			border-radius: 12px;
 			margin: 10px 16px;
-			background: rgba(200, 222, 179, 0.3) url("../../assets/banner-bg.png");
+			background: rgba(200, 222, 179, 0.3) url("@/assets/banner-bg.png");
 		}
 	}
 

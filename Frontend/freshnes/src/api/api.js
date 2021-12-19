@@ -4,7 +4,7 @@ const CSRF_COOKIE_NAME = "csrftoken";
 const CSRF_HEADER_NAME = "X-CSRFToken";
 
 export default axios.create({
-	baseURL: "http://127.0.0.1:8000/api/",
+	baseURL: "https://Extraordinary01.pythonanywhere.com/api/",
 	headers: {
 		Accept: "application/json",
 		"Content-Type": "application/json",

@@ -4,14 +4,14 @@
 		<div class="category-title__btns">
 			<div v-if="isGrid" class="category-title__item">
 				<button class="category-title__btn category-title__btn_a">
-					<img src="../../assets/icons/square-grid.svg" alt="grid" />
+					<img src="@/assets/icons/square-grid.svg" alt="grid" />
 					<span>Grid View</span>
 				</button>
 				<button
 					@click="$emit('changeView', !isGrid)"
 					class="category-title__btn"
 				>
-					<img src="../../assets/icons/list-view.svg" alt="list" />
+					<img src="@/assets/icons/list-view.svg" alt="list" />
 					<span>List View</span>
 				</button>
 			</div>
@@ -20,11 +20,11 @@
 					@click="$emit('changeView', !isGrid)"
 					class="category-title__btn"
 				>
-					<img src="../../assets/icons/square-grid_grey.svg" alt="grid" />
+					<img src="@/assets/icons/square-grid_grey.svg" alt="grid" />
 					<span> Grid View</span>
 				</button>
 				<button class="category-title__btn category-title__btn_a">
-					<img src="../../assets/icons/list-view_gr.svg" alt="list" />
+					<img src="@/assets/icons/list-view_gr.svg" alt="list" />
 					<span>List View</span>
 				</button>
 			</div>

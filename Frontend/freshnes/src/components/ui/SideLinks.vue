@@ -22,7 +22,7 @@
 			v-if="datas.isBtn.value > 5"
 			class="sides__btn btn"
 			>{{ datas.btn.title }}
-			<span><img src="../../assets/icons/right_arrow.svg" alt="arrow" /></span
+			<span><img src="@/assets/icons/right_arrow.svg" alt="arrow" /></span
 		></router-link>
 	</div>
 </template>

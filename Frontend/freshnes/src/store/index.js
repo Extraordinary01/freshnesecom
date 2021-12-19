@@ -1,10 +1,10 @@
 import { createStore } from "vuex";
-import { estore } from "./estore";
-import { blog } from "./blog";
-import auth from "./auth";
-import signup from "./signup";
-import password from "./password";
-import { filter } from "./filter";
+import { estore } from "@/store/estore";
+import { blog } from "@/store/blog";
+import auth from "@/store/auth";
+import signup from "@/store/signup";
+import password from "@/store/password";
+import { filter } from "@/store/filter";
 
 export default createStore({
 	state: () => ({

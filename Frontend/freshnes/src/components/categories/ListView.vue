@@ -9,7 +9,7 @@
 </template>
 
 <script>
-	import ListCard from "../ui/ListCard.vue";
+	import ListCard from "@/components/ui/ListCard.vue";
 	export default {
 		components: {
 			ListCard,
@@ -33,7 +33,7 @@
 			margin-left: 16px;
 		}
 	}
-	@media (max-width: 470px) {
+	@media (max-width: 600px) {
 		.category-list-view {
 			margin-left: 0;
 		}

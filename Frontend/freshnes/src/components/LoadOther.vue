@@ -3,7 +3,7 @@
 		<div class="load-other__item">
 			<button @click="loadOther()" class="btn green-btn load-other__btn">
 				Show more
-				<span><img src="../assets/icons/dropdown__icon_wh.svg" alt="" /></span>
+				<span><img src="@/assets/icons/dropdown__icon_wh.svg" alt="" /></span>
 			</button>
 		</div>
 	</div>

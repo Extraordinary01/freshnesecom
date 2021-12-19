@@ -136,7 +136,7 @@
 				</div>
 				<div class="confirmation__safe">
 					<div class="confirmation__img">
-						<img src="../assets/icons/safety.png" alt="" />
+						<img src="@/assets/icons/safety.png" alt="" />
 					</div>
 					<div class="confirmation__content">
 						<h6 class="confirmation__title title">All your data are safe</h6>
@@ -207,20 +207,20 @@
 </template>
 
 <script>
-	import BreadCrumbs from "../components/ui/BreadCrumbs.vue";
-	import CheckoutStep from "../components/ui/CheckoutStep.vue";
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import Checkbox from "../components/ui/Checkbox.vue";
-	import CheckoutRadio from "../components/checkout/CheckoutRadio.vue";
-	import CheckoutPayment from "../components/checkout/CheckoutPayment.vue";
-	import CartCard from "../components/ui/CartCard.vue";
-	import Radio from "../components/ui/Radio.vue";
-	import useCart from "../composables/useCart";
+	import BreadCrumbs from "@/components/ui/BreadCrumbs.vue";
+	import CheckoutStep from "@/components/ui/CheckoutStep.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import Checkbox from "@/components/ui/Checkbox.vue";
+	import CheckoutRadio from "@/components/checkout/CheckoutRadio.vue";
+	import CheckoutPayment from "@/components/checkout/CheckoutPayment.vue";
+	import CartCard from "@/components/ui/CartCard.vue";
+	import Radio from "@/components/ui/Radio.vue";
+	import useCart from "@/composables/useCart";
 	import { ref, computed, onMounted } from "vue";
 	import { useStore } from "vuex";
-	import router from "../router";
-	import api from "../api/api";
-	import keys from "../keys";
+	import router from "@/router";
+	import api from "@/api/api";
+	import keys from "@/keys";
 	export default {
 		components: {
 			BreadCrumbs,
@@ -273,7 +273,6 @@
 			};
 			const stripeTokenHandler = async (token) => {
 				const items = [];
-				// console.log(cart);
 				cart.value.items.forEach((el) => {
 					const obj = {
 						product: el.product.id,
@@ -584,7 +583,6 @@
 				flex: 1 1 100%;
 				margin: 12px auto;
 				text-align: center;
-				// margin-bottom: 25px;
 				&:nth-child(2n) {
 					padding-left: 0;
 				}

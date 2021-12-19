@@ -10,7 +10,6 @@ export default function useSearchFilter() {
 	const searchQuery = ref("");
 	const products = computed(() => store.state.estore.products);
 	const categories = computed(() => store.state.estore.categories);
-	// const posts = computed(() => store.state.blog.posts)
 	watch(
 		() => route.path,
 		() => {

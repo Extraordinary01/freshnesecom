@@ -1,4 +1,4 @@
-import auth from "../api/auth";
+import auth from "@/api/auth";
 
 import {
 	PASSWORD_RESET_BEGIN,
@@ -17,7 +17,7 @@ import {
 	PASSWORD_CHANGE_CLEAR,
 	PASSWORD_CHANGE_FAILURE,
 	PASSWORD_CHANGE_SUCCESS,
-} from "./types";
+} from "@/store/types";
 
 export default {
 	namespaced: true,

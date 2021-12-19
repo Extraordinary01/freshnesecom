@@ -7,12 +7,12 @@
 				</div>
 				<div class="custom-file-input__content">
 					<div class="custom-file-input__icon">
-						<img src="../../assets/icons/add-file.svg" />
+						<img src="@/assets/icons/add-file.svg" />
 					</div>
 					<div class="custom-file-input__text">No file choosen yet</div>
 				</div>
 				<div class="custom-file-input__cancel" @click="resetImg()">
-					<img src="../../assets/icons/close.svg" />
+					<img src="@/assets/icons/close.svg" />
 				</div>
 				<div class="custom-file-input__file-name">File name here</div>
 			</div>

@@ -18,7 +18,14 @@ export default function useCart() {
 		const price = ref(0);
 		let total = 0;
 		cart.value.items.forEach((el) => {
-			total += parseFloat(el.product.price) * el.quantity;
+			if (el.quantity < 0) {
+				store.commit("addMessage", {
+					message: "Quantity can be only positive number!",
+					bgColor: "red",
+					textColor: "#fff",
+				});
+			}
+			total += parseFloat(el.product.price) * Math.abs(el.quantity);
 		});
 		price.value = parseFloat(total.toPrecision(3));
 		return price;

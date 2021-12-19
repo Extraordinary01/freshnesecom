@@ -18,7 +18,7 @@
 </template>
 
 <script>
-	import Radio from "../ui/Radio.vue";
+	import Radio from "@/components/ui/Radio.vue";
 	export default {
 		data() {
 			return {

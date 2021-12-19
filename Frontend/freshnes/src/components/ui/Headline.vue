@@ -12,8 +12,8 @@
 </template>
 
 <script>
-	import BlockTop from "./BlockTop.vue";
-	import ProductsGrid from "./ProductsGrid.vue";
+	import BlockTop from "@/components/ui/BlockTop.vue";
+	import ProductsGrid from "@/components/ui/ProductsGrid.vue";
 	export default {
 		components: {
 			BlockTop,

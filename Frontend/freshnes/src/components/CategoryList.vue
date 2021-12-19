@@ -14,7 +14,7 @@
 							>{{ item.name }}
 							<span
 								><img
-									src="../assets/icons/sm_dropdown__icon.svg"
+									src="@/assets/icons/sm_dropdown__icon.svg"
 									alt="dropdown" /></span
 						></router-link>
 					</div>
@@ -75,7 +75,6 @@
 			&__item {
 				flex: 0 1 100%;
 				text-align: center;
-				// margin: 5px auto;
 			}
 		}
 	}

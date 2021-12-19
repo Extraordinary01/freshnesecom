@@ -11,7 +11,7 @@
 </template>
 
 <script>
-	import { toRefs, computed, ref, toRef } from "vue";
+	import { toRefs, computed, ref } from "vue";
 	import { useStore } from "vuex";
 	import { useRoute } from "vue-router";
 	export default {
@@ -81,7 +81,7 @@
 	.rating {
 		&__star {
 			display: inline-block;
-			background-image: url("../../assets/icons/inactive-star.svg");
+			background-image: url("@/assets/icons/inactive-star.svg");
 			width: 20px;
 			height: 20px;
 			margin-right: 3px;
@@ -89,7 +89,7 @@
 			margin-top: 12px;
 			&:hover,
 			&_a {
-				background-image: url("../../assets/icons/action-star.svg");
+				background-image: url("@/assets/icons/action-star.svg");
 				transition: 0.3s;
 			}
 		}

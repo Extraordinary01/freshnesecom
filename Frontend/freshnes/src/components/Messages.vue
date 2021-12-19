@@ -14,7 +14,7 @@
 </template>
 
 <script>
-	import MessageBox from "./ui/MessageBox.vue";
+	import MessageBox from "@/components/ui/MessageBox.vue";
 	export default {
 		components: {
 			MessageBox,

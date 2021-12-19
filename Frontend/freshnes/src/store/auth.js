@@ -1,6 +1,6 @@
-import auth from "../api/auth";
-import api from "../api/api";
-import router from "../router";
+import auth from "@/api/auth";
+import api from "@/api/api";
+import router from "@/router";
 import {
 	LOGIN_BEGIN,
 	LOGIN_FAILURE,
@@ -9,10 +9,10 @@ import {
 	LOGOUT,
 	REMOVE_TOKEN,
 	SET_TOKEN,
-} from "./types";
+} from "@/store/types";
 
 const TOKEN_STORAGE_KEY = "TOKEN_STORAGE_KEY";
-const isProd = import.meta.env.MODE === "production";
+const isProd = process.env.NODE_ENV === "production";
 
 const initialState = {
 	user: {
@@ -119,7 +119,7 @@ const mutations = {
 		state.authenticating = false;
 		state.error = false;
 		state.errors = [];
-		router.push("/");
+		router.push({ name: "home" });
 	},
 	[LOGIN_CLEAR](state) {
 		state.authenticating = false;

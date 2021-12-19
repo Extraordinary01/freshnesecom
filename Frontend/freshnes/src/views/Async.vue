@@ -10,12 +10,12 @@
 </template>
 
 <script>
-	import Header from "../components/Header.vue";
-	import CategoryList from "../components/CategoryList.vue";
-	import Footer from "../components/Footer.vue";
-	import Messages from "../components/Messages.vue";
+	import Header from "@/components/Header.vue";
+	import CategoryList from "@/components/CategoryList.vue";
+	import Footer from "@/components/Footer.vue";
+	import Messages from "@/components/Messages.vue";
 	import { useStore } from "vuex";
-	import api from "../api/api";
+	import api from "@/api/api";
 	export default {
 		components: {
 			Header,
@@ -48,5 +48,3 @@
 		},
 	};
 </script>
-
-<style></style>

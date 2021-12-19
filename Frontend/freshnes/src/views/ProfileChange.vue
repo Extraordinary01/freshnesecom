@@ -78,8 +78,8 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import InputFile from "../components/ui/InputFile.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import InputFile from "@/components/ui/InputFile.vue";
 	import { useStore } from "vuex";
 	import { computed } from "vue";
 	import { useRouter } from "vue-router";

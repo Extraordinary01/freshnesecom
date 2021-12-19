@@ -9,7 +9,7 @@
 			<div class="user-one-column__main change-password__main">
 				<div class="user-one-column__input change-password__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="New password"
 							name="new_password1"
@@ -25,7 +25,7 @@
 				</div>
 				<div class="user-one-column__input change-password__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="Confirm new password"
 							name="new_password2"
@@ -41,7 +41,7 @@
 				</div>
 				<div class="user-one-column__input change-password__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="Old password"
 							name="old_password"
@@ -72,10 +72,10 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import TogglePassword from "../components/ui/TogglePassword.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import TogglePassword from "@/components/ui/TogglePassword.vue";
 	import { computed, ref } from "vue";
-	import useUserValidation from "../composables/useUserValidation";
+	import useUserValidation from "@/composables/useUserValidation";
 	import { useStore } from "vuex";
 	import { useRouter } from "vue-router";
 	export default {
@@ -115,7 +115,7 @@
 							bgColor: "#6a983c",
 							textColor: "#fff",
 						});
-						router.push("/");
+						router.push({ name: "home" });
 					}
 				}
 			};

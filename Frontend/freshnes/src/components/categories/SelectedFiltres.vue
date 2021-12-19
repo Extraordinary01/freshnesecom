@@ -27,10 +27,10 @@
 </template>
 
 <script>
-	import FilterRadio from "./FilterRadio.vue";
-	import FilterCheckbox from "./FilterCheckbox.vue";
-	import FilterSelect from "./FilterSelect.vue";
-	import TagFilter from "../ui/TagFilter.vue";
+	import FilterRadio from "@/components/categories/FilterRadio.vue";
+	import FilterCheckbox from "@/components/categories/FilterCheckbox.vue";
+	import FilterSelect from "@/components/categories/FilterSelect.vue";
+	import TagFilter from "@/components/ui/TagFilter.vue";
 	export default {
 		components: {
 			FilterRadio,

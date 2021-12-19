@@ -25,10 +25,10 @@
 </template>
 
 <script>
-	import BlockTop from "../ui/BlockTop.vue";
-	import BlogBigCard from "../ui/BlogBigCard.vue";
-	import BlogSmallCard from "../ui/BlogSmallCard.vue";
-	import BlogSide from "../ui/BlogSide.vue";
+	import BlockTop from "@/components/ui/BlockTop.vue";
+	import BlogBigCard from "@/components/ui/BlogBigCard.vue";
+	import BlogSmallCard from "@/components/ui/BlogSmallCard.vue";
+	import BlogSide from "@/components/ui/BlogSide.vue";
 	import { useWindowSize } from "vue-window-size";
 	export default {
 		components: {

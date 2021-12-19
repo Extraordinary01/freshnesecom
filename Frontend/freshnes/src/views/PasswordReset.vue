@@ -10,7 +10,7 @@
 			<div class="user-one-column__main">
 				<div class="user-one-column__input">
 					<div class="reset__input">
-						<img width="30" height="30" src="../assets/icons/mail.svg" alt="" />
+						<img width="30" height="30" src="@/assets/icons/mail.svg" alt="" />
 						<billing-input
 							title="Email"
 							name="login"
@@ -32,10 +32,10 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
 	import { ref } from "vue";
 	import { useStore } from "vuex";
-	import useUserValidation from "../composables/useUserValidation";
+	import useUserValidation from "@/composables/useUserValidation";
 	export default {
 		components: {
 			BillingInput,

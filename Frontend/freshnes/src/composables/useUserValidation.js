@@ -1,4 +1,4 @@
-import api from "../api/api";
+import api from "@/api/api";
 import { ref, watchEffect } from "vue";
 export default function useUserValidation(user, errors) {
 	const show = ref({

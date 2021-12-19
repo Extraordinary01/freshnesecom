@@ -16,9 +16,9 @@
 </template>
 
 <script>
-	import SideLinks from "../ui/SideLinks.vue";
-	import BannerFlex from "./BannerFlex.vue";
-	import GridCard from "../ui/GridCard.vue";
+	import SideLinks from "@/components/ui/SideLinks.vue";
+	import BannerFlex from "@/components/main/BannerFlex.vue";
+	import GridCard from "@/components/ui/GridCard.vue";
 	export default {
 		components: {
 			SideLinks,

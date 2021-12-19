@@ -9,7 +9,7 @@
 			<div class="user-one-column__main confirm-password__main">
 				<div class="user-one-column__input confirm-password__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="New password"
 							name="new_password1"
@@ -25,7 +25,7 @@
 				</div>
 				<div class="user-one-column__input confirm-password__input">
 					<div class="toggle-password">
-						<img src="../assets/icons/lock.svg" alt="" />
+						<img src="@/assets/icons/lock.svg" alt="" />
 						<billing-input
 							title="Confirm new password"
 							name="new_password2"
@@ -53,10 +53,10 @@
 </template>
 
 <script>
-	import BillingInput from "../components/ui/BillingInput.vue";
-	import TogglePassword from "../components/ui/TogglePassword.vue";
+	import BillingInput from "@/components/ui/BillingInput.vue";
+	import TogglePassword from "@/components/ui/TogglePassword.vue";
 	import { ref } from "vue";
-	import useUserValidation from "../composables/useUserValidation";
+	import useUserValidation from "@/composables/useUserValidation";
 	import { useStore } from "vuex";
 	import { useRoute } from "vue-router";
 	export default {
@@ -96,5 +96,3 @@
 		},
 	};
 </script>
-
-<style lang="scss"></style>

@@ -14,7 +14,7 @@
 					><span class="green">+ 32 USD</span> Additional price</span
 				>
 				<span class="checkout-radio__icon_s"
-					><img src="/src/assets/icons/fedex.png" alt="fed ex"
+					><img src="@/assets/icons/fedex.png" alt="fed ex"
 				/></span>
 			</template>
 		</radio>
@@ -32,7 +32,7 @@
 					><span class="green">+ 15 USD</span> Additional price</span
 				>
 				<span class="checkout-radio__icon_s"
-					><img src="/src/assets/icons/dhl.png" alt="dhl"
+					><img src="@/assets/icons/dhl.png" alt="dhl"
 				/></span>
 			</template>
 		</radio>
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-	import Radio from "../ui/Radio.vue";
+	import Radio from "@/components/ui/Radio.vue";
 	import { useWindowSize } from "vue-window-size";
 	import { ref } from "vue";
 	export default {
